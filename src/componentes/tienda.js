@@ -1,17 +1,16 @@
-import React from "react";
+import React from 'react';
+import Productos from './productos';
 
-const Tienda = () => {
-    return (  
-        <div>
-            <h1>Tienda</h1>
-            <p>
-                Bienvenidos a la tienda de compra.
-                Bienvenidos a la tienda de compra.
-                Bienvenidos a la tienda de compra.
-                Bienvenidos a la tienda de compra.
-            </p>
-        </div>
-    );
+const Tienda = ({productos, agregarProductoAlCarrito}) => {
+	return (
+		<div>
+			<h1>Tienda</h1>
+			<Productos 
+				productos={productos}
+				agregarProductoAlCarrito={agregarProductoAlCarrito} 
+			/>
+		</div>
+	);
 }
  
 export default Tienda;
